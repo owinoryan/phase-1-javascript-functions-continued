@@ -1,25 +1,19 @@
 
 // index.js
 
-// Function declaration for saturdayFun
-function saturdayFun(activity = "roller-skate") {
-    return `This Saturday, I want to ${activity}!`;
-  }
-  
-  module.exports = {
-    saturdayFun
-  };
+// saturdayFun.js
+ function saturdayFun(activity = "roller-skate") {
+  return `This Saturday, I want to ${activity}!`;
+}
 
-
- function mondayWork(activity = "go to the office") {
+// mondayWork.js
+function mondayWork(activity = "go to the office") {
   return `This Monday, I will ${activity}.`;
-  };
-  
-  console.log(mondayWork()); 
-  //"You are *a hard worker*!"
+}
+
+// wrapAdjective.js
 function wrapAdjective(highlight = '*') {
-  let adjective ='a hard worker';
-  return function(adjective) {
+  return function(adjective = 'a hard worker') {
     return `You are ${highlight}${adjective}${highlight}!`;
-  }
+  };
 }
